@@ -23,7 +23,7 @@ h2 {
     font-family:'SF Bold';
 }
 .nav{
-    background-color:#0d0d0d;
+    backdrop-filter: blur(10px);
     height:50px;
     padding:16px;
     overflow:hidden;
