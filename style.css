@@ -89,7 +89,7 @@ p {
 }
 .footer {
     margin-top:3000px;
-    background-image:url('wallpaper.jpg');
+    background-color:#0d0d0d;
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
