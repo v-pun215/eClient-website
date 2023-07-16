@@ -8,7 +8,7 @@
 }
 body {
     color:white;
-    background-image:url('wallpaper.jpg');
+    background-color:#141313;
     background-repeat: no-repeat;
     background-position:center;
     background-attachment: fixed;
@@ -18,28 +18,51 @@ body {
 }
 h1{
     font-family:'SF Bold';
+    font-size: 40px;
 }
 h2 {
     font-family:'SF Bold';
 }
-.nav{
-    backdrop-filter: blur(10px);
+.nav {
+    color:white;
+    margin-top:30px;
+    padding:17px;
+    width:97%;
     height:50px;
-    padding:16px;
-    overflow:hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0;
-    width:100%;
 }
-.nav h1 {
-    margin-top:5px;
-    margin-left:10px;
+.nav a {
+    color:grey;
+    text-decoration: none;
+    transition: all .2s ease-in-out; 
+    font-size: 18px;
+}
+.nav a:hover {
+    color:white;
+}
+.gog {
     float:left;
+    border-radius:100px;
+    margin-left:280px;
+    
 }
+.gog:hover {
+    opacity: 0.5;
+}
+.sus {
+    float:left;
+    margin-top:17px;
+    
+}
+.sus1 {
+    float:left;
+    margin-top:17px;
+    margin-left:750px;
+}
+
 .nav .f {
     color:white;
     float:left;
-    margin-left:70%;
+    margin-left:50%;
     margin-top:14px;
     text-decoration: none;
     transition: all .2s ease-in-out; 
@@ -47,22 +70,12 @@ h2 {
 .nav .f:hover {
     transform: scale(1.1); 
 }
-.nav a {
-    color:white;
-    float:left;
-    margin-left:50px;   
-    margin-top:14px;
-    text-decoration: none;
-    transition: all .2s ease-in-out; 
-}
-.nav a:hover{
-    transform: scale(1.1); 
-}
 .n1 {
     text-align:left;
-    width:97.9%;
+    width:50%;
     padding:16px;
     height:200px;
+    margin-left:-261px;
 }
 .n1 title {
     text-align:center;
@@ -75,18 +88,17 @@ h2 {
 }
 .acon {
     color:white;
-    text-decoration: none;
+    text-decoration: underline;
     transition: all .2s ease-in-out; 
-    margin-top:10px;
+    margin-top:px;
+    padding-top:10px;
     margin-left:50px;
     font-size:20px;
-    border-radius: 5px;
-    padding: 15px 10px;
-    background-color:black;
 }
 
 .acon:hover {
     color:gray;
+    text-decoration:none;
 }
 li {
     margin-left:50px;
@@ -97,11 +109,99 @@ p {
 }
 .footer {
     margin-top:4200px;
-    background-image:url('https://images.pling.com/img/00/00/61/26/90/1563632/a4e9e9901bc4e634f4ef4c99a38754febd6d34f979bfa6df22f3ef1029b34f47cb1b.jpg');
+    background-color:#191919;
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
     width:97.9%;
     padding:16px;
-    height:100px;
+    height:70px;
 }
+.footer a{
+    color:white;
+    text-decoration: underline;
+    transition: all .2s ease-in-out; 
+}
+.footer a:hover {
+    color:gray;
+}
+.foo {
+    color:white;
+    text-decoration: underline;
+    transition: all .2s ease-in-out; 
+}
+.foo:hover {
+    color:gray;
+}
+.lite {
+    margin-left:300px;
+}
+#demo {
+    border-right: .15em solid white;
+    animation:
+    blink-caret .75s step-end infinite;
+    width:fit-content;
+    height:fit-content;
+
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+#dude {
+    border-right: .15em solid white;
+    animation:
+    blink2 .75s step-end infinite;
+    width:fit-content;
+    height:fit-content;
+
+}
+@keyframes blink2 {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+.box1 {
+    background-color:#191919;
+    width:400px;
+    padding:17px;
+    border-radius:15px;
+    height:170px;
+    text-align:center;
+    transition: all .2s ease-in-out; 
+    cursor:pointer;
+    margin-left:310px;
+    margin-top:40px;
+    float:left;
+}
+.box1:hover {
+    transform: scale(1.1); 
+}
+.box2 {
+    background-color:#191919;
+    width:400px;
+    padding:17px;
+    border-radius:15px;
+    height:170px;
+    text-align:center;
+    transition: all .2s ease-in-out; 
+    cursor:pointer;
+    margin-left:40px;
+    margin-top:40px;
+    float:left;
+}
+.box2:hover {
+    transform: scale(1.1); 
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #141313; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius:30px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+  }    

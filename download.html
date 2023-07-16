@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - eClient</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mc.ico">
+</head>
+<body>
+    <div class="nav">
+        <a class="gog" href="index.html"><img src="mc.ico" width="50px" height="50px"></a>
+        <a class="sus1" href="lite.html">Lite</a>
+        <a class="sus" style="margin-left:20px;" href="download.html">Download</a>
+        <a class="sus" style="margin-left:20px;" href="https://github.com/v-pun215/eClient">GitHub</a>
+    </div>
+    <center>
+        <h1 id="dude"></h1>
+        <p>Thank you for choosing eClient.</p>
+    </center>
+    <div class="box1" onclick="edo()">
+        <h2 style="font-size:35px;">Download eClient</h1>
+        <p>Download the latest version of eClient.</p>
+    </div>
+    <div class="box2" onclick="eno()">
+        <h2 style="font-size:35px;">Download eClient Lite</h1>
+        <p>Download the latest version of eClient Lite.</p>
+    </div>
+    <p>
+    <center>
+        <p style="float:right;margin-top:50px;margin-right:650px;"><a class=foo href="choose.html">Don't know what to choose?</a></p>
+    </center>
+    <script>
+        var i = 0;
+        var txt = 'Downloads.';
+        var speed = 120;
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("dude").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        typeWriter();
+        function edo() {
+            window.open("https://github.com/v-pun215/eClient/releases/latest", "_blank");
+        }
+        function eno() {
+            window.open("https://github.com/v-pun215/eClient-Lite/releases/latest", "_blank");
+        }
+    </script>
+</body>
+</html>
