@@ -16,6 +16,10 @@ body {
     font-family: SF;
     margin:0;
 }
+.mobile {
+    display:none;
+    color:black;
+}
 h1{
     font-family:'SF Bold';
     font-size: 40px;
@@ -205,3 +209,36 @@ p {
   ::-webkit-scrollbar-thumb:hover {
     background: grey; 
   }    
+@media screen and (max-width:800px) {
+    .nav {
+        display:none;
+    }
+    h1 {
+        display:none;
+    }
+    h2 {
+        display:none;
+    }
+    p {
+        display:none;
+    }
+    img{
+        display:none;
+    }
+    .footer {
+        display:none;
+    }
+    a {
+        display:none;
+    }
+    ul {
+        display:none;
+    }
+    .n1 {
+        display:none;
+    }
+    .mobile {
+        display:block;
+        color:white;
+    }
+}

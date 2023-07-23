@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Minecraft Online - eClient</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mc.ico">
+</head>
+<body onload="typeWriter()">
+    <div class="nav" >
+        <a class="gog" href="index.html"><img src="mc.ico" width="50px" height="50px"></a>
+        <a class="sus1" href="lite.html">Lite</a>
+        <a class="sus" style="margin-left:20px;" href="download.html">Download</a>    
+        <a class="sus" style="margin-left:20px;" href="mc.html">Try Minecraft</a>   
+    </div>
+    <center>
+        <h1 id="dude"></h1>
+    </center>
+    <div class="box1" onclick="five()">
+        <h2 style="font-size:35px;">Minecraft 1.5.2</h1>
+        <p>Launches Minecraft 1.5.2 in the browser window.</p>
+    </div>
+    <div class="box2" onclick="eight()">
+        <h2 style="font-size:35px;">Minecraft 1.8</h1>
+        <p>Launcher Minecraft 1.8 in the browser window.</p>
+    </div>
+</body>
+<script>
+    function five() {
+        window.open("minecraft-1.5.2.html", "_blank");
+    }
+    function eight(){
+        window.open("1.8/index.html", "_blank");
+    }
+    var i = 0;
+        var txt = 'Try Minecraft.';
+        var speed = 120;
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("dude").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        typeWriter();
+</script>
+</html>
