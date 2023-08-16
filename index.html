@@ -3,67 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eClient - A Minecraft Launcher</title>
+    <script src="https://kit.fontawesome.com/82fb29efa6.js" crossorigin="anonymous"></script>
+    <title>eClient - An Open-Source Minecraft Launcher</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="mc.ico">
+    <link rel="icon" href="mc.ico">
 </head>
-<div class="mobile" >
-    <p>To see this website, visit it with your computer.</p>
-</div>
-<body onload="typeWriter()">
-    <div class="nav" >
-        <a class="gog" href="index.html"><img src="mc.ico" width="50px" height="50px"></a>
-        <a class="sus1" href="lite.html">Lite</a>
-        <a class="sus" style="margin-left:20px;" href="download.html">Download</a>    
-        <a class="sus" style="margin-left:20px;" href="https://online.earthsoft.me/">Try Minecraft</a>   
-    </div>
+<body>
+    <nav class="topbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="lite.html">Lite</a></li>
+            <li><a href="https://online.earthsoft.me">Try Minecraft</a></li>
+            <li><a href="download.html">Download</a></li>
+        </ul>
+    </nav>
+    <h1>eClient</h1>
+    <p>Introducing eClient, a Minecraft launcher with tons of features.</p>
+    <button onclick="download()" class="download">Download</button>
+    <button style="margin-left:20px;" onclick="git()" class="download">GitHub</button>
+    <img class="idl" src="https://user-images.githubusercontent.com/67716965/260288489-08c52dcf-a60a-4e62-8350-7257f2cdcca4.png" width="760px" height="440px"/>
     <center>
-        <div class="n1">
-            <h1 class="con" id="demo"></h1>
-            <p class="con">Introducing eClient, a Minecraft launcher with tons of features. </p>
-            <a class="acon" href="https://github.com/v-pun215/eClient/">Learn more, at GitHub.</a>
-            
+        <h1 style="margin-top:400px;margin-left:0px;">Screenshots</h1>
+        <div class="box">
+            <img src="https://user-images.githubusercontent.com/67716965/260300621-4fce9a7d-ad96-4dcf-8850-f218ee10f884.png" width="500px" height="300px"/>
+            <p>Updater</p>
         </div>
-        <div class="n1">
-            <h1 class="con">Features</h1>
-            <ul>
-                <li>Can launch all versions of Minecraft Java Edition (starting from 1.0).</li>
-                <li>Has a Mod Installer that I fixed (from PyCraft).</li>
-                <li>Can install Forge and Fabric.</li>
-                <li>Ability to login with Mojang, Ely.by and Offline Accounts.</li>
-                <li>Never gives you up.</li>
-              </ul>  
+        <div class="box">
+            <img src="https://user-images.githubusercontent.com/67716965/260300635-fd9a1fbe-ebe2-4077-8cb6-81ef3752e69d.png" width="500px" height="300px"/>
+            <p>Home</p>
         </div>
-        <div class="n1">
-            <h1 class="con">Screenshots</h1>
-            <img src="https://user-images.githubusercontent.com/67716965/252140517-1832df19-6d37-40fe-a5d5-140efd597e55.png" width="800px" height="460px">
-            <img style="margin-top:50px;" src="https://user-images.githubusercontent.com/67716965/252140501-419a3ab7-707a-4128-85c0-d5109310fd90.png" width="800px" height="500px">
-            <img style="margin-top:50px;" src="https://user-images.githubusercontent.com/67716965/252140532-b4d67b51-2d98-4a8c-b163-4fbffcccaf4c.png" width="800px" height="500px">
-            <img style="margin-top:50px;" src="https://user-images.githubusercontent.com/67716965/252140536-87d7c3c5-49d6-4faa-a02f-616928aa070b.png" width="800px" height="500px">
-            <img style="margin-top:50px;" src="https://user-images.githubusercontent.com/67716965/252140594-70d93c6e-4e0c-4b1d-a318-3969f038ea99.png" width="800px" height="500px">
-            <img style="margin-top:50px;" src="https://user-images.githubusercontent.com/67716965/252140598-d465202f-eba3-4a40-971b-5f22f4ec4f0b.png" width="800px" height="500px">
-            <img style="margin-top:50px;" src="https://user-images.githubusercontent.com/67716965/252140634-9acf0115-33fa-402e-8fbe-3bfcce503705.png" width="800px" height="500px">
-            <img style="margin-top:50px;" src="https://user-images.githubusercontent.com/67716965/252140609-6d147b3c-e1c5-4aca-85b0-ba73a3e35cc7.png" width="600px" height="250px">
-
+        <div class="box">
+            <img src="https://user-images.githubusercontent.com/67716965/260300647-1ff0dd9f-f31b-4f40-9b28-a803b5dcf073.png" width="500px" height="300px"/>
+            <p>Installations</p>
         </div>
-        <p></p>
-        <div class="footer">
-            <h2>Made by <a href="https://vpun215.netlify.app">v-pun215</a></h2>
+        <div class="box">
+            <img src="https://user-images.githubusercontent.com/67716965/260300654-4b6bffea-012f-4459-ae0c-9f9adf4de4a1.png" width="500px" height="300px"/>
+            <p>Settings</p>
+        </div>
+        <div class="box">
+            <img src="https://user-images.githubusercontent.com/67716965/260300662-1b96cf30-312b-4039-8201-0cc3c4b6eead.png" width="500px" height="300px"/>
+            <p>Additional Settings</p>
+        </div>
+        <div class="box">
+            <img src="https://user-images.githubusercontent.com/67716965/260300672-00f40c86-be37-416d-9342-6133f88317a4.png" width="500px" height="300px"/>
+            <p>Accounts</p>
+        </div>
+        <div class="box">
+            <img src="https://user-images.githubusercontent.com/67716965/260300677-5e038d32-96cd-4e75-9c46-0b21a4c99638.png" width="500px" height="300px"/>
+            <p>Help</p>
+        </div>
+        <div class="box" style="height:320px;">
+            <img src="https://user-images.githubusercontent.com/67716965/260300693-79555e54-3bd4-41fa-b70a-ecc4870fc13e.png" width="500px" height="220px"/>
+            <p>Mod Installer</p>
+        </div>
+        <div class="box" style="height:635px;">
+            <img src="https://user-images.githubusercontent.com/67716965/260300728-7fd0ae69-fce5-4563-9933-6b33e9715325.png" width="300px" height="540px"/>
+            <p>Mod Installer - List of Mods</p>
         </div>
     </center>
-    <script>
-        var i = 0;
-        var txt = 'eClient - A Minecraft Launcher.';
-        var speed = 120;
-        
-        function typeWriter() {
-          if (i < txt.length) {
-            document.getElementById("demo").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-          }
-        }
-        </script>
+    <footer>
+        <p>Made by <a style="color:white;" href="https://vpun215.vercel.app">v-pun215</a></p>
+    </footer>
 </body>
-
+<script>
+    function download() {
+        window.location.href = "/download.html";
+    }
+    function git() {
+        window.location.href = "https://github.com/v-pun215/eClient";
+    }
+</script>
 </html>
