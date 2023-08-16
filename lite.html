@@ -1,56 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eClient Lite - A lightweight Minecraft Launcher</title>
+    <script src="https://kit.fontawesome.com/82fb29efa6.js" crossorigin="anonymous"></script>
+    <title>eClient - An Open-Source Minecraft Launcher</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="mc.ico">
+    <link rel="icon" href="mc.ico">
 </head>
-
 <body>
-    <div class="nav">
-        <a class="gog" href="index.html"><img src="mc.ico" width="50px" height="50px"></a>
-        <a class="sus1" href="lite.html">Lite</a>
-        <a class="sus" style="margin-left:20px;" href="download.html">Download</a>
-        <a class="sus" style="margin-left:20px;" href="https://online.earthsoft.me/">Try Minecraft</a>
-    </div>
-    <div class="lite">
-        <h1 id="dude"></h1>
-        <p>A lightweight Minecraft Launcher.<br />It is a stripped down version of eClient, with only the basic
-            features.</p>
-        <h1 style="margin-top:40px;">Perfect for:</h1>
-        <ul style="margin-left:-50px;">
-            <li>Older computers.</li>
-            <li>People who don't want to use the full version of eClient.</li>
-            <li>People who want to use a lightweight launcher.</li>
+    <nav class="topbar">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="lite.html"class="active">Lite</a></li>
+            <li><a href="https://online.earthsoft.me">Try Minecraft</a></li>
+            <li><a href="download.html">Download</a></li>
         </ul>
-        <h1 style="margin-top:40px;">Screenshots</h1>
-        <img src="https://user-images.githubusercontent.com/67716965/253788995-0c4ce69f-8aea-4cde-aacd-ebd8dcca01c8.png" width="365px" height="440px" style="margin-left:20px;">
-        <p>
-        <img src="https://user-images.githubusercontent.com/67716965/253789000-5ab506f5-9654-4bc3-8c8b-3e06c795bf11.png" width="360px" height="350px" style="margin-left:20px;">
-        <p>
-    </div>
-    <div style="margin-top:10px;" class="footer">
-        <center>
-            <h2>Made by <a href="https://vpun215.netlify.app">v-pun215</a></h2>
-        </center>
-    </div>
-    <script>
-        var i = 0;
-        var txt = 'eClient Lite.';
-        var speed = 120;
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("dude").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-        typeWriter();
-    </script>
+    </nav>
+    <center>
+        <h1 style="margin-left:0px;">This page is under construction.</h1>
+        <p style="margin-left:0px;">To learn more about eClient Lite, go <a style="color:White;" href="https://github.com/v-pun215/eClient-Lite">here</a>.</p>
+    </center>
 </body>
-
 </html>
